@@ -16,9 +16,10 @@ A sentiment distribution dataset of 50,000 Indonesian reviews of four mobile ban
 | `p_netral` | Probability of neutral sentiment |
 | `p_negatif` | Probability of negative sentiment |
 | `hard_label` | Label with the highest probability (`positif`, `netral`, or `negatif`) |
+| `entropy` | Shannon entropy of the soft label in bits (0 to 1.585) |
 | `pita` | Entropy band of the soft label (`tegas` = low, `menengah` = medium, `ambigu` = high) |
 
-The three probabilities in each row sum to 1.
+The three probabilities in each row sum to 1. The band thresholds are the 33.3rd and 66.7th percentiles of entropy (0.5842 and 0.6801 bits).
 
 ## Labeling
 
